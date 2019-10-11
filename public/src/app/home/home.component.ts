@@ -19,20 +19,18 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
   project1ClickOn() {
-    this.videoLink += this.videoLinkId;
-    this.youtubeLink = this.videoLink;
+    this.youtubeLink = this.videoLink + this.videoLinkId;
   }
   project1ClickOff() {
     console.log("it was clicked off!")
     this.youtubeLink = "";
   }
   project2ClickOn() {
-    this.videoLink += this.videoLinkId2;
-    this.youtubeLink = this.videoLink;
+    this.youtubeLink = this.videoLink + this.videoLinkId2;
   }
   project2ClickOff() {
     console.log("it was clicked off!")
     this.youtubeLink = "";
   }
-  
+
 }

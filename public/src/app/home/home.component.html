@@ -33,16 +33,17 @@
     <div class="project_section">
         <div class="container">
             <h1 class="text-center">Projects:</h1>
-            <p>While continually updating, please see some of my most recent work below. Select a button and watch the
+            <p>Please see some of my most recent work below. Select a button and watch the
                 video
-                tutorial of me running through the project and it's various features!</p>
+                tutorial of me running through the project and it's various features! <em>Note, this page is being
+                    constantly updated with new projects.</em></p>
             <div class="row projects_wrapper">
                 <div class="col">
                     <!-- Far left project, California Adventures -->
                     <a (click)="project1ClickOn()" id="link" data-toggle="modal" data-target="#popUpModal2">
                         <div (mouseover)="showText=true" (mouseout)="showText=false">
                             <div class="card bg-dark text-white" *ngIf="showText">
-                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                                <img src="assets/images/aoc.png" class="card-img" alt="...">
                                 <div class="card-img-overlay">
                                     <h4 class="card-title">California Adventures</h4>
                                     <!-- <p class="card-text">Web app that allows users to search for activities throughout California, see/write
@@ -57,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="card bg-dark text-white" *ngIf="!showText">
-                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                                <img src="assets/images/aoc.png" class="card-img" alt="...">
                             </div>
                         </div>
                     </a>
@@ -67,7 +68,7 @@
                     <a (click)="project2ClickOn()" id="link" data-toggle="modal" data-target="#popUpModal3">
                         <div (mouseover)="showText2=true" (mouseout)="showText2=false">
                             <div class="card bg-dark text-white" *ngIf="showText2">
-                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                                <img src="assets/images/Gallery.png" class="card-img" alt="...">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">AGT Photography</h5>
                                     <!-- <p class="card-text">E-commerce web app, built for a photographer, showcasing their portfolio of images,
@@ -80,7 +81,7 @@
                                 </div>
                             </div>
                             <div class="card bg-dark text-white" *ngIf="!showText2">
-                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                                <img src="assets/images/Gallery.png" class="card-img" alt="...">
                             </div>
                         </div>
                     </a>
@@ -89,7 +90,7 @@
                 <div class="col">
                     <div (mouseover)="showText3=true" (mouseout)="showText3=false">
                         <div class="card bg-dark text-white" *ngIf="showText3">
-                            <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                            <img src="assets/images/code.jpg" class="card-img" alt="...">
                             <div class="card-img-overlay">
                                 <h4 class="card-title">Algorithms Site</h4>
                                 <p class="card-text"><em> Currently in development! Check back later for updates.</em>
@@ -97,7 +98,7 @@
                             </div>
                         </div>
                         <div class="card bg-dark text-white" *ngIf="!showText3">
-                            <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                            <img src="assets/images/code.jpg" class="card-img" alt="...">
                         </div>
                     </div>
                 </div>

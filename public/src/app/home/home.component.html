@@ -1,0 +1,319 @@
+<!-- HEADER IMAGE -->
+<div class="background_image text-center">
+    <img class="main_image" src="assets/images/coding-pic.jpg" alt="Computer with code on it"
+        style="background: linear-gradient(rgb(255, 255, 255) 10%, #ffffff00, rgb(255, 255, 255) 95%);">
+    <div class="container">
+        <div class=" carousel-caption d-none d-md-block shadow-box">
+            <h5> Adam <span class="red">Gibson</span></h5>
+            <p>A Full-Stack Software Developer</p>
+        </div>
+        <div id="about_me" style="margin-top: -80px;"></div>
+    </div>
+</div>
+<!-- ABOUT ME SECTION -->
+<div class="container about_me">
+    <h1 class="text-center">About Me:</h1>
+    <div class="about_wrapper">
+        <p>Hi there! Thank you for visiting my portfolio site. My name is Adam Gibson, I am a software developer
+            proficient
+            in
+            Python, C#, and MEAN full-stack web development. Please take a look at my project sampling below to get a
+            taste
+            of
+            what I've built so far. If you'd like to learn more about me personally, please follow the button below
+            to read my full bio!</p>
+        <div class="about_me_button">
+            <a href="about"><button class="btn btn-outline-dark">Full Bio</button></a>
+        </div>
+        <div id="projects"></div>
+    </div>
+</div>
+<!-- PROJECTS SECTION -->
+<div class="container shadow-box" style="background-color: rgb(238, 238, 238);">
+    <div class="project_section">
+        <div class="container">
+            <h1 class="text-center">Projects:</h1>
+            <p>While continually updating, please see some of my most recent work below. Select a button and watch the
+                video
+                tutorial of me running through the project and it's various features!</p>
+            <div class="row projects_wrapper">
+                <div class="col">
+                    <!-- Far left project, California Adventures -->
+                    <a (click)="project1ClickOn()" id="link" data-toggle="modal" data-target="#popUpModal2">
+                        <div (mouseover)="showText=true" (mouseout)="showText=false">
+                            <div class="card bg-dark text-white" *ngIf="showText">
+                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">California Adventures</h4>
+                                    <!-- <p class="card-text">Web app that allows users to search for activities throughout California, see/write
+                        reviews, and post their own adventures. Worked collaboratively with one other student, splitting the
+                        work
+                        evenly, working on both front-end and back-end features. </p> -->
+                                    <p class="card-text"><strong> Technologies Used: </strong> <em> Python, Django,
+                                            jQuery,
+                                            MySQL, Bootstrap,
+                                            Google
+                                            Maps API, AWS EC2, HTML5, CSS</em></p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white" *ngIf="!showText">
+                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Center Project, AGT Photography -->
+                <div class="col">
+                    <a (click)="project2ClickOn()" id="link" data-toggle="modal" data-target="#popUpModal3">
+                        <div (mouseover)="showText2=true" (mouseout)="showText2=false">
+                            <div class="card bg-dark text-white" *ngIf="showText2">
+                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">AGT Photography</h5>
+                                    <!-- <p class="card-text">E-commerce web app, built for a photographer, showcasing their portfolio of images,
+                        and
+                        also allowing users to purchase prints in various sizes/materials.</p> -->
+                                    <p class="card-text"><strong> Technologies Used: </strong> <em> C#, asp.net, jQuery,
+                                            MySQL,
+                                            Bootstrap,
+                                            PayPal API, AWS EC2, HTML5, CSS</em></p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white" *ngIf="!showText2">
+                                <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Far right, Algorithm App that I'm working on -->
+                <div class="col">
+                    <div (mouseover)="showText3=true" (mouseout)="showText3=false">
+                        <div class="card bg-dark text-white" *ngIf="showText3">
+                            <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">Algorithms Site</h4>
+                                <p class="card-text"><em> Currently in development! Check back later for updates.</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-white" *ngIf="!showText3">
+                            <img src="assets/images/coding-pic.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="knowledge"></div>
+        </div>
+    </div>
+</div>
+<!-- knowledge/skills slideshow section -->
+<div class="container knowledge_and_skills text-center">
+    <h1 class="text-center" style="margin-bottom: 1vw;">Knowledge/Skills:</h1>
+    <div class="logo_wrapper">
+        <div class="text-center language_and_logo">
+            <!-- <img src="..." class="w-20" alt="..."> -->
+            <i class="devicon-python-plain colored"></i>
+            <p>Python</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-csharp-plain colored"></i>
+            <p>C#</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-typescript-plain colored"></i>
+            <p>Typescript</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-javascript-plain colored"></i>
+            <p>Javascript</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-css3-plain colored"></i>
+            <p>CSS</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-html5-plain colored"></i>
+            <p>HTML</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-django-plain colored"></i>
+            <p>Django</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-dot-net-plain colored"></i>
+            <p>Asp.Net</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-express-original colored"></i>
+            <p>Express</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <p>Bootstrap</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-jquery-plain colored"></i>
+            <p>jQuery</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <p>Bootstrap</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-github-plain colored"></i>
+            <p>GitHub</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-amazonwebservices-original colored"></i>
+            <p>AWS EC2</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-mysql-plain colored"></i>
+            <p>MySQL</p>
+        </div>
+        <div class="text-center language_and_logo">
+            <i class="devicon-mongodb-plain colored"></i>
+            <p>MongoDB</p>
+        </div>
+        <div id="testimonials"></div>
+    </div>
+</div>
+<!-- TESTIMONIALS SECTION NEAR THE BOTTOM -->
+<div class="container shadow-box" style="background-color: rgb(238, 238, 238);">
+    <div class="testimonials text-center">
+        <div class="container">
+            <h1 class="text-center" style="margin-bottom: 1vw;">Testimonials:</h1>
+            <div id="carouselExampleInterval" class="carousel slide testimonials_wrapper" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="8000">
+                        <div class="row">
+                            <div class="col col-md-4 text-right">
+                                <img class="testimonial_pic" src="assets/images/avatar-place-holder.jpg" alt="">
+                            </div>
+                            <div class="col col-md-6">
+                                <p class="testimonial_description"><em> "While Adam Gibson was my student, he was a
+                                        tenacious and energetic problem solver who never shied away from displaying
+                                        leadership in the face of tough obstacles"</em>
+                                </p>
+                                <p>- <span class="red"><strong>Brendan Stanton</strong></span> | Coding Dojo - Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-interval="8000">
+                        <div class="row">
+                            <div class="col col-md-4 text-right">
+                                <img class="testimonial_pic" src="assets/images/avatar-place-holder.jpg" alt="">
+                            </div>
+                            <div class="col col-md-6">
+                                <p class="testimonial_description"><em> "Adam is a stellar worker, not just in
+                                        completing his necessary workloads, but outdoing and outperforming set
+                                        expectations. In addition to this, his outgoing/friendly personality ensures
+                                        he'll be a influential piece of any companies culture."</em>
+                                </p>
+                                <p>- <span class="red"><strong>Tim Yeo</strong></span> | Bluewater Travel - Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-interval="8000">
+                        <div class="row">
+                            <div class="col col-md-4 text-right">
+                                <img class="testimonial_pic" src="assets/images/avatar-place-holder.jpg" alt="">
+                            </div>
+                            <div class="col col-md-6">
+                                <p class="testimonial_description"><em> "On a number of varied projects in the past, I have worked with Adam as part of a team and individually.  Adam has a focused work ethic which ensures his timely completion of individual tasks and also contributes to his skillfull management of larger team oriented goals. he is professional but also very easy to work with, and he brings a unique set of knowledge and ideas to any project.  "</em>
+                                </p>
+                                <p>- <span class="red"><strong> Shannon Crosby</strong></span> | Bluewater Travel - Travel Advisor/Content Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact me section -->
+<div class="contact_wrapper text-center">
+    <div class="container">
+        <a href="#" data-toggle="modal" data-target="#popUpModal" style="text-decoration: none;">
+            <div class="contact_text shadow-box2">
+                <h1> Contact <span class="red">Me</span></h1>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- Pop up for python project clicked -->
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="popUpModal2" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="min-width: 50vw; width: 100%; min-height: 20rem;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adventures of California Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                    (click)="project1ClickOff()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="video-responsive">
+                    <iframe width="560" height="315" [src]="youtubeLink | safe: 'resourceUrl'" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+                <ul style="list-style: none; padding: 0;">
+                    <li>
+                        <a href="https://github.com/gibsonac/python_proj_code">
+                            <p>View the Code Here</p>
+                        </a>
+                    </li>
+                    <li>
+                        <img src=" assets/images/logo2.png" style="height: 6vw;" alt="Adam Gibson Logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pop up for c# project clicked -->
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="popUpModal3" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="min-width: 50vw; width: 100%; min-height: 20rem;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adventures of California Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                    (click)="project2ClickOff()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="video-responsive">
+                    <iframe width="560" height="315" [src]="youtubeLink | safe: 'resourceUrl'" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+                <ul style="list-style: none; padding: 0;">
+                    <li>
+                        <a href="https://github.com/gibsonac/python_proj_code">
+                            <p>View the Code Here</p>
+                        </a>
+                    </li>
+                    <li>
+                        <img src=" assets/images/logo2.png" style="height: 6vw;" alt="Adam Gibson Logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="/"><img src=" assets/images/logo2.png" style="height: 4vw" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about_me">About Me <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#knowledge">Knowledge/Skills <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#testimonials">Testimonials <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+  <a href="#" data-toggle="modal" data-target="#popUpModal"><button class="btn btn-sm btn-outline-dark"
+      type="button">Contact</button></a>
+</nav>
+<div style="min-height: 70vh;">
+  <router-outlet></router-outlet>
+</div>
+<!-- FOOTER SECTION -->
+<footer class="text-center">
+  <a href="https://www.linkedin.com/in/adam-gibson-79a10831/"><img class="footer_logo"
+      src="https://icongr.am/devicon/linkedin-plain.svg?size=50&color=ff5e00" alt=""></a>
+  <a href="https://github.com/gibsonac"><img class="footer_logo"
+      src="https://icongr.am/devicon/github-original-wordmark.svg?size=50&color=ff5e00" alt=""></a>
+</footer>
+<!-- 'CONTACT ME' PAGE MODAL POPUP BOX -->
+<div class="modal fade" id="popUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="min-width: 50vw; width: 100%; min-height: 20rem;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Lets Connect!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="https://formspree.io/gibsoncadam@gmail.com">
+          <div class="container">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label class="red">Name</label>
+                <input type="text" class="form-control" placeholder="Your Name" name="name" row="2">
+                <label class="red">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Your Email" row="2">
+              </div>
+              <div class="form-group col-md-6">
+                <label class="red">Message</label>
+                <textarea class="form-control" name="message" placeholder="Please place the body of your message here"
+                  rows="4"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-outline-dark" type="submit" data-dismiss="modal" data-toggle="modal"
+              data-target="#popUpModal5">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer" style="justify-content: center;">
+        <img src=" assets/images/logo2.png" style="height: 6vw;" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- after contact me page -->
+<div class="modal fade" id="popUpModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="min-width: 50vw; width: 100%; min-height: 20rem;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your message has been sent</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Thank you for messaging! I'll be sure to respond as soon as I can.</p>
+        <p>Kindest Regards,
+          <br>
+          Adam</p>
+      </div>
+      <div class="modal-footer" style="justify-content: center;">
+        <img src=" assets/images/logo2.png" style="height: 6vw;" alt="">
+      </div>
+    </div>
+  </div>
+</div>

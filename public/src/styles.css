@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth;
+  }
+.shadow-box {
+    border: 1px solid #BFBFBF;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  }
+  .shadow-box2 {
+    border: 1px solid #BFBFBF;
+    /* padding: 10px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/* ON THE HOMEPAGE */
+/* HOMEPAGE- background image and text */
+.background_image .main_image {
+    width: 100%;
+}
+.background_image {
+    max-width: 100%; 
+    margin: auto;
+}
+.background_image::before{
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, #f8f9fa 100%);
+    margin-bottom: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+}
+.background_image::after{
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+}
+.carousel-caption {
+    color: black; 
+    background-color: white; 
+    border-radius: 15px;
+    opacity: .75;
+}
+.carousel-caption h5 {
+    font-size: 5rem;
+}
+.carousel-caption p {
+    font-size: 2rem;
+}
+.red {
+    color: #ff5e00;
+}
+/* HOMEPAGE - about me section */
+.about_wrapper {
+    padding: 5% 0;
+}
+.about_me_button {
+    text-align: center; 
+    margin-left: 15vw;
+}
+.about_me {
+    min-height: 24vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+/* HOMEPAGE - project section */
+.card-img-overlay {
+    background-color: #ff5e00; 
+    opacity: .87;
+}
+.project_section {
+    background-color: rgb(238, 238, 238);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.projects_wrapper {
+    padding: 3% 0;
+}
+/* HOMEPAGE - language/skills section */
+.knowledge_and_skills {
+    min-height: 24vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.language_and_logo {
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 0 5px;
+}
+.logo_wrapper {
+    padding: 6% 0;
+}
+.knowledge_and_skills i {
+    font-size: 2rem;
+}
+.knowledge_and_skills .colored {
+    color: #ff5e00;
+}
+/* HOMEPAGE - testimonials */
+.testimonials {
+    background-color: rgb(238, 238, 238);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.testimonial_description {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.testimonial_pic {
+    width: 200px; 
+    border-radius: 50%;
+}
+.testimonials_wrapper {
+    padding: 3% 0;
+}
+/* HOMEPAGE - contact me section */
+.contact_wrapper {
+    margin-top: 30px;
+    height: 70vh;
+    background:
+        url(assets/images/postcards.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13%;
+}
+.contact_text {
+    color: black; 
+    background-color: white; 
+    border-radius: 15px;
+    opacity: .85;
+}
+footer {
+    min-height: 7vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: #d0d0d0;
+}
+.footer_logo {
+    margin: 5px;
+}
+.contact_pg_background {
+    height: 70vh;
+    /* background: */
+        /* url(assets/images/postcards.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 13%; */
+}
+.video-responsive{
+    /* overflow:hidden; */
+    width: 100%;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* .video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+} */

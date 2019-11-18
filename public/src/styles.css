@@ -79,6 +79,9 @@ html {
 .projects_wrapper {
     padding: 3% 0;
 }
+.stopping_text_hover * {
+    pointer-events: none;
+}
 /* HOMEPAGE - language/skills section */
 .knowledge_and_skills {
     min-height: 24vw;
